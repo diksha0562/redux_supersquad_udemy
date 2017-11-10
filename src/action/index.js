@@ -1,6 +1,7 @@
 export const ADD_CHARACTER = 'ADD_CHARACTER';
+export const REMOVE_CHARACTER ='REMOVE_CHARACTER';
 
- function addCharacterById(id){
+export function addCharacterById(id){
     const action={
         type : ADD_CHARACTER,
         // id:id
@@ -8,4 +9,13 @@ export const ADD_CHARACTER = 'ADD_CHARACTER';
     }
 return action;
 }
-export default addCharacterById;
+
+export function removeCharacterById(id){
+    const action={
+        type : REMOVE_CHARACTER,
+        id
+    }
+    return action;
+}
+
+ 
